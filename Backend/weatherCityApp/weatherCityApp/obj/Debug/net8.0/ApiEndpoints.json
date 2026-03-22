@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "CityController",
+    "Method": "GetCityInfo",
+    "RelativePath": "api/city-info/{city}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

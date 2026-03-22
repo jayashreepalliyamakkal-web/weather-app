@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+select {
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  max-width: 400px;
+}
+
+.error {
+  color: red;
+}
