@@ -1,13 +1,35 @@
-export default function CitySelector({ city, setCity }) {
-  const cities = ["dublin", "london", "new york"];
+// ------ List of available cities for dropdown ------------------------
 
+const CITIES = [
+  { value: "dublin", label: "Dublin" },
+  { value: "london", label: "London" },
+  { value: "new york", label: "New York" },
+  { value: "paris", label: "Paris" },
+  { value: "tokyo", label: "Tokyo" },
+  { value: "sydney", label: "Sydney" },
+  { value: "mumbai", label: "Mumbai" },
+];
+
+// -------  Dropdown component for selecting a city ----------------------------
+export default function CitySelector({ city, setCity }) {
   return (
-    <select value={city} onChange={(e) => setCity(e.target.value)}>
-      {cities.map((c) => (
-        <option key={c} value={c}>
-          {c.toUpperCase()}
-        </option>
-      ))}
-    </select>
+    <div className="city-selector">
+      {/* Location icon for UI */}
+      <span className="city-selector-icon">📍</span>
+
+      {/* Controlled select input */}
+      <select
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
+        className="city-select"
+      >
+        {/* Render options dynamically */}
+        {CITIES.map((c) => (
+          <option key={c.value} value={c.value}>
+            {c.label}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 }
