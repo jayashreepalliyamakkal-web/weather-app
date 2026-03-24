@@ -2,11 +2,7 @@
 
 const CITIES = [
   { value: "dublin", label: "Dublin" },
-  { value: "london", label: "London" },
   { value: "new york", label: "New York" },
-  { value: "paris", label: "Paris" },
-  { value: "tokyo", label: "Tokyo" },
-  { value: "sydney", label: "Sydney" },
   { value: "mumbai", label: "Mumbai" },
 ];
 
